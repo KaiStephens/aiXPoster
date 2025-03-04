@@ -31,6 +31,16 @@ logger = logging.getLogger("ArtificialWearablesPoster")
 # Load environment variables
 load_dotenv()
 
+# Twitter API credentials
+TWITTER_API_KEY = os.environ.get("TWITTER_API_KEY")
+TWITTER_API_SECRET = os.environ.get("TWITTER_API_SECRET")
+TWITTER_ACCESS_TOKEN = os.environ.get("TWITTER_ACCESS_TOKEN")
+TWITTER_ACCESS_TOKEN_SECRET = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET")
+TWITTER_BEARER_TOKEN = os.environ.get("TWITTER_BEARER_TOKEN")
+
+# OpenRouter API key
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+
 # App configuration
 POST_SCHEDULE = os.environ.get("POST_SCHEDULE", "0 */6 * * *")  # Default: every 6 hours
 AI_MODEL = os.environ.get("AI_MODEL", "anthropic/claude-3-haiku")
