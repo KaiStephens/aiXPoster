@@ -31,12 +31,7 @@ logger = logging.getLogger("ArtificialWearablesPoster")
 # Load environment variables
 load_dotenv()
 
-# Twitter API credentials
-TWITTER_API_KEY = os.environ.get("TWITTER_API_KEY", "rYhQT7GniDv3R3WISBz2D8S0e")
-TWITTER_API_SECRET = os.environ.get("TWITTER_API_SECRET", "IXnUpA9PtPapgAnvBgMcjtxWTNCAxNacViKHtKQain04cSkVJB")
-TWITTER_ACCESS_TOKEN = os.environ.get("TWITTER_ACCESS_TOKEN", "1668344147810344969-cJfSnaqp7ytMnm0Tn6T4hiDYhshHj1")
-TWITTER_ACCESS_TOKEN_SECRET = os.environ.get("TWITTER_ACCESS_TOKEN_SECRET", "vhxy87lQBjfi0q6jzoYcCVR8H9I0ssEuv2CPuqon6Gysg")
-TWITTER_BEARER_TOKEN = os.environ.get("TWITTER_BEARER_TOKEN", None)
+
 
 # OpenRouter API key
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
