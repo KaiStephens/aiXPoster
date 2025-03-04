@@ -31,11 +31,6 @@ logger = logging.getLogger("ArtificialWearablesPoster")
 # Load environment variables
 load_dotenv()
 
-
-
-# OpenRouter API key
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
-
 # App configuration
 POST_SCHEDULE = os.environ.get("POST_SCHEDULE", "0 */6 * * *")  # Default: every 6 hours
 AI_MODEL = os.environ.get("AI_MODEL", "anthropic/claude-3-haiku")
